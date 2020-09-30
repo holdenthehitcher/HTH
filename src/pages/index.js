@@ -1,14 +1,24 @@
 import React from "react"
 // import { Link } from "gatsby"
+import Main from "./home/main"
+import Articles from "./home/articles"
 import "../styles/global.css"
 
 import Layout from "../components/layout"
 
 
 const IndexPage = () => (
-  <div className="bg-body">
     <Layout>
-      <p>Hello world</p>
+      <Main />
+      <Articles />
+      {/* Home Components:
+           Main Logo
+          1. Articles
+          2. About Section - p + Youtube
+          3. Flight Finder Widget
+          4. Volunteer  */}
+
+
       {/* //   <SEO title="Home" />
   //   <h1>Hi people</h1>
   //   <p>Welcome to your new Gatsby site.</p>
@@ -19,7 +29,6 @@ const IndexPage = () => (
   //   <Link to="/page-2/">Go to page 2</Link> <br />
   //   <Link to="/using-typescript/">Go to "Using TypeScript"</Link> */}
     </Layout>
-  </div>
 )
 
 export default IndexPage
